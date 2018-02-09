@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <script src= "angular.min.js"></script>
+                <script src="app.js"></script>
+
+    </head>
+    <body>
+        <div ng-controller="myCtr">
+            <table>
+                <tr>
+                    <th>name</th>
+                    <th>age</th>  
+                </tr>
+               <tr ng-repeat="user in users"> 
+                <td>{{user.name}}</td>
+                <td>{{user.age}}</td>
+               </tr>
+            </table>
+        </div>
+        <br/>
+    <div ng-controller="deleteCtr">
+        <button ng-click="java()">java</button>
+        <button ng-click= "python()">python</button>
+        <button ng-click="php()">php</button>
+        <button ng-click="js()">js</button>
+        {{favlanguage}}
+        
+        
+    </div>       
+    </body>
+
+</html>
